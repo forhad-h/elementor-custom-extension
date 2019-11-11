@@ -111,7 +111,7 @@ final class Elementor_Custom_Extension {
 		}
 
 		// after stisfy with all requirements include plugin.php
-		require_once( 'plugin.php' );
+		require_once( __DIR__ . '/plugin.php' );
 	}
 
 	/**

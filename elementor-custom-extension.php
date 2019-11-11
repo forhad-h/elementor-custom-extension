@@ -12,6 +12,15 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
+ * Plugin base URL
+ * @version 1.0.0
+ * @var string plugin base url
+*/
+$plugin_url = plugin_dir_url( __FILE__ );
+define('PLUGIN_BASE_URL', $plugin_url);
+
+
+/**
  * Main Elementor Custom Extension Class
  *
  * @see plugin.php for custom funcionality

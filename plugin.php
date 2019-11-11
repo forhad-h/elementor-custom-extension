@@ -51,6 +51,9 @@ class Plugin {
 		// Register widget scripts
 		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'widget_scripts' ] );
 
+		// Register widget styles
+		add_action( 'elementor/frontend/after_register_styles', [ $this, 'widget_styles' ] );
+
 		// Register widgets
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
 	}
@@ -62,8 +65,19 @@ class Plugin {
 	 * @access public
 	 */
 	public function widget_scripts() {
-		wp_register_script( 'product-gallery-slider', plugins_url( '/assets/js/slider.js', __FILE__ ), [ 'jquery' ], false, true );
+		wp_register_script( 'jssor-slider-js', plugins_url( '/assets/js/jssor.slider-28.0.0.min.js', __FILE__ ), [], false, true );
+		wp_register_script( 'product-gallery-slider', plugins_url( '/assets/js/product-gallery-slider.js', __FILE__ ), [ 'jssor-slider-js' ], false, true );
 	}
+
+	/**
+	 * register widget styles
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 */
+	 public function widget_styles() {
+  		wp_enqueue_style( 'jssor-slider-css', plugins_url( '/assets/css/jssor-slider.css', __FILE__ ) );
+	 }
 
 	/**
 	 * Register Widgets

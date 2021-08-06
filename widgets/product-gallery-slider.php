@@ -80,6 +80,7 @@ class Product_Gallery_Slider extends Widget_Base {
 	 * @since 1.0.0
 	 * @access protected
 	 */
+	/*
 	protected function _register_controls() {
 		$this->start_controls_section(
 			'section_content',
@@ -126,6 +127,7 @@ class Product_Gallery_Slider extends Widget_Base {
 
 		$this->end_controls_section();
 	}
+	*/
 
 	/**
 	 * Render the widget output on the frontend.
@@ -147,15 +149,15 @@ class Product_Gallery_Slider extends Widget_Base {
 	 *
 	 * @since 1.0.0
 	 * @access protected
-	 *
-	 *
-   *protected function _content_template() {
-   *	?>
-   *	<div class="title">
-   *		{{{ settings.title }}}
-   *	</div>
-   *	<?php
-   *}
+	 */
+	 /*
+   protected function _content_template() {
+   	?>
+   	<div class="title">
+   		{{{ settings.title }}}
+   	</div>
+   	<?php
+   }
 	*/
 
 }

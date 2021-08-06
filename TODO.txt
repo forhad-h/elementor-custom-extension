@@ -1,3 +1,4 @@
 # make available widgets in 'dynamic' options
 # make placeholder for editor
 # make options to view in lightbox / modal / popup
+# availabe in woocomerce tab

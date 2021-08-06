@@ -1,8 +1,13 @@
 <?php
-
-
+/**
+ * Front-end of product gallery slider
+ * @since 1.0.0
+*/
 $images_dir = PLUGIN_BASE_URL.'assets/images/';
 global $product;
+
+//$product = wc_get_product( 113 ); // get product with product id
+
 $gallery_image_blocks = '';
 
 if($product && count($product->get_gallery_image_ids())) {
